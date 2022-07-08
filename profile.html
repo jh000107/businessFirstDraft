@@ -1,0 +1,370 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+  <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div class="wrapper">
+    <main>
+      <nav>
+        <ul class="top-ul">
+          <div>
+            <li class="listItem logo">
+              <a href="">LOGO</a>
+            </li>
+          </div>
+          <div>
+            <li class="profileImg">
+              <a href="profile.html">
+                <img src="img/default.png" alt="">
+              </a>
+            </li>
+            <div class="modal-button">
+              <button data-modal-target="#modal">LOG IN</button>
+            </div>
+          </div>
+        </ul>
+      </nav>
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">LOG IN</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <form action="" class="login-form">
+          <input class="login-input" type="email" placeholder="EMAIL" required="true">
+          <input class="login-input" type="password" placeholder="PASSWORD" required="true">
+          <div class="account-type">
+            <div>
+              <div class="type-anchor" href="">PUBLIC ACCOUNT</div>
+            </div>
+            <div>
+              <div class="type-anchor" href="">PRIVATE ACCOUNT</div>
+            </div>
+          </div>
+          <div class="forgot-submit">
+            <div class="account-forgot">
+              <a href="">FORGOTTEN ACCOUNT?</a>
+              <a href="sign-up.html">NOT YET REGISTERED?</a>
+            </div>
+            <div>
+              <input class="login-submit" type="submit" value="LOG IN">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="overlay"></div>
+      <div class="hero-profile">
+        <div class="profile">
+          <div class="profile-top">
+            
+            <div class="profile-pic">
+              
+            </div>
+            <div class="profile-info">
+              <div class="info-left">
+                <h4>HANNAH KIM</h4>
+                <div class="two-longsq"></div>
+                <div class="two-longsq"></div>
+                <div class="lg-sq"></div>
+              </div>
+              <div class="info-right">
+                <div class="info-right-top">
+                  <h4>BOSTON UNIVERSITY 2020</h4>
+                  <p>COLLEGE OF FINE ARTS</p>
+                </div>
+                <div class="info-right-bottom">
+                  <a href="">CONNECT</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile-bottom">
+            <div class="profile-left">
+              <ul data-tabs class="profile-ul">
+                <li><a data-tabby-default href="#myfeed">MY FEED</a></li>
+                <li><a href="#history">HISTORY</a></li>
+                <li><a href="#subscribed">SUBSCRIBED</a></li>
+                <li><a href="#subscriber">SUBSCRIBER</a></li>
+                <li><a href="#more">MORE</a></li>
+              </ul>
+              <div id="myfeed">
+                <div class="chat-box">
+                  <form name="message" id="message">
+                    <textarea> </textarea>
+                  </form>
+                </div>
+                <div class="msg-total">
+                  <div class="msg-profile">
+                    <img src="img/default.png"></img>
+                  </div>
+                  <div class="msg-box">
+                    <div class="title-msg">
+                      (TITLE)
+                    </div>
+                    <div class="content-image">
+                      <div class="box">
+                        (CONTENT)
+                      </div>
+                      <div class="msg-img">
+                        (IMAGE)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="msg-total">
+                  <div class="msg-profile">
+                    <img src=img/default.png></img>
+                  </div>
+                  <div class="msg-box-small">
+                    <div class="title-msg">
+                      (TITLE)
+                    </div>
+                    <div class="one-box">
+                      (CONTENT)
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-arrow-line">
+                </div>
+              </div>
+              <div id="history">
+                <div class="chat-box">
+                  <form name="message" id="message">
+                    <textarea> </textarea>
+                  </form>
+                </div>
+                <div class="msg-totalright">
+                  <div class="msg-profile-history">
+                    <img src=img/default.png></img>
+                  </div>
+                  <div class="msg-boxright">
+                    <div class="title-msg">
+                      (TITLE)
+                    </div>
+                    <div class="boxright">
+                      (CONTENT)
+                    </div>
+                  </div>
+                </div>
+                <div class="msg-totalright">
+                  <div class="msg-profile-history">
+                    <img src=img/default.png></img>
+                  </div>
+                  <div class="msg-boxright">
+                    <div class="title-msg">
+                      (TITLE)
+                    </div>
+                    <div class="boxright">
+                      (CONTENT)
+                    </div>
+                  </div>
+                </div>
+                <div class="msg-totalright">
+                  <div class="msg-profile-history">
+                    <img src=img/default.png></img>
+                  </div>
+                  <div class="msg-boxright">
+                    <div class="title-msg">
+                      (TITLE)
+                    </div>
+                    <div class="boxright">
+                      (CONTENT)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="subscribed">
+                <div class="search">
+                  <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                  </button>
+                  <input type="text" class="searchTerm">
+                </div>
+              
+                <div class="subscriber-list">
+                  <div class="subscriber-left">
+                    <div class="subscriber-pic">
+                    </div>
+                    <div class="subscriber-info">
+                      <div class="info-top">
+                        <h4>HANNAH KIM</h4>
+                        <button type="button" class="cancelButton">
+                          <i class="fa fa-minus-square-o"></i>
+                        </button>
+                      </div>
+                      <div class="info-bottom">
+                        <h4>BOSTON UNIVERSITY 2020</h4>
+                        <p>COLLEGE OF FINE ARTS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="subscriber-right">
+                    <div class="subscriber-pic">
+                    </div>
+                    <div class="subscriber-info">
+                      <div class="info-top">
+                        <h4>HANNAH KIM</h4>
+                        <button type="button" class="cancelButton">
+                          <i class="fa fa-minus-square-o"></i>
+                        </button>
+                      </div>
+                      <div class="info-bottom">
+                        <h4>BOSTON UNIVERSITY 2020</h4>
+                        <p>COLLEGE OF FINE ARTS</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showmore">
+                  <button type="button" class="moreButton">
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+              <div id="subscriber">
+                <div class="search">
+                  <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                  </button>
+                  <input type="text" class="searchTerm">
+                </div>
+              
+                <div class="subscriber-list">
+                  <div class="subscriber-left">
+                    <div class="subscriber-pic">
+                    </div>
+                    <div class="subscriber-info">
+                      <div class="info-top">
+                        <h4>HANNAH KIM</h4>
+                        <button type="button" class="cancelButton">
+                          <i class="fa fa-plus-square-o"></i>
+                        </button>
+                      </div>
+                      <div class="info-bottom">
+                        <h4>BOSTON UNIVERSITY 2020</h4>
+                        <p>COLLEGE OF FINE ARTS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="subscriber-right">
+                    <div class="subscriber-pic">
+                    </div>
+                    <div class="subscriber-info">
+                      <div class="info-top">
+                        <h4>HANNAH KIM</h4>
+                        <button type="button" class="cancelButton">
+                          <i class="fa fa-plus-square-o"></i>
+                        </button>
+                      </div>
+                      <div class="info-bottom">
+                        <h4>BOSTON UNIVERSITY 2020</h4>
+                        <p>COLLEGE OF FINE ARTS</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showmore">
+                  <button type="button" class="moreButton">
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+              <div id="more"></div>
+            </div>
+            <div class="profile-right">
+              <div class="sub-count">
+                <div class="sub-count-text">
+                  <h5>SUBSCRIBED</h5>
+                  <h5>SUBSCRIBER</h5>
+                </div>
+                <div class="sub-count-nmb">
+                  <p>150</p>
+                  <p>200</p>
+                </div>
+              </div>
+              <div class="msg">
+                <div class="msg-top">
+                  <p>MESSAGE</p>
+                  <i class="fas fa-comment-alt msg-i"></i>
+                </div>
+                <div class="msg-memb">
+                  <div class="msg-pic"></div>
+                  <div class="msg-names">
+                    <p class="msg-name">NAME</p>
+                    <p class="msg-msg">MESSAGE</p>
+                  </div>
+                </div>
+                <div class="msg-memb">
+                  <div class="msg-pic"></div>
+                </div>
+                <div class="msg-memb">
+                  <div class="msg-pic"></div>
+                </div>
+                <div class="msg-memb">
+                  <div class="msg-pic"></div>
+                </div>
+                <div class="msg-memb">
+                  <div class="msg-pic"></div>
+                </div>
+                <div class="msg-memb">
+                  <div class="msg-pic"></div>
+                </div>
+                <div class="msg-memb">
+                  <div class="msg-pic"></div>
+                </div>
+              </div>
+              <div class="profile-white">
+                
+              </div>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+      <div class="profile-background">
+
+      </div>
+      <footer>
+
+      </footer>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12.0.0/dist/js/tabby.polyfills.min.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

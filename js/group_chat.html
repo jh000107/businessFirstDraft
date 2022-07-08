@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Group Chat Interface</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="group_chat.css">
+
+
+    </head>
+
+    <body>
+        <div class="container" id="og-container">
+            <div class="set-icons">
+                <i class="fa fa-times" aria-hidden="true" style="font-size:13px;float:right;margin-right:2%"></i>
+                <i class="fa fa-compress" aria-hidden="true" style="font-size:12px;float:right;margin-right:2%"></i>
+                <i class="fa fa-cog" aria-hidden="true" style="font-size:12px;float:right;margin-right:2%"></i>
+                <i class="fa fa-bell" style="font-size:12px;float:right;margin-right:2%"></i>
+            </div>
+
+            <div class="group-top">
+                <p>Create Group Chat <span class="create">Create</span></p>
+            </div>
+
+            <div class="custom-select">
+                <select>
+                    <option value="0" selected>Friends</option>
+                    <option value="1">All</option>
+                </select>
+            </div>
+            
+            <!--user block-->
+            <div>
+                <div class="user-pic"></div>
+                <div class="user-name">Username</div>
+                <button class="add" id="addBtn">
+                    <div style="font-size:30px;text-align:center;position:relative;top:1px;z-index:1">+</div>
+                </button>
+            </div>
+
+            <div>
+                <div class="user-pic"></div>
+                <div class="user-name">Username</div>
+                <button class="add" id="addBtn">
+                    <div style="font-size:30px;text-align:center;position:relative;top:1px;z-index:1">+</div>
+                </button>
+            </div>
+
+            <div>
+                <div class="user-pic"></div>
+                <div class="user-name">Username</div>
+                <button class="add" id="addBtn">
+                    <div style="font-size:30px;text-align:center;position:relative;top:1px;z-index:1">+</div>
+                </button>
+            </div>
+
+            <div>
+                <div class="user-pic"></div>
+                <div class="user-name">Username</div>
+                <button class="add" id="addBtn">
+                    <div style="font-size:30px;text-align:center;position:relative;top:1px;z-index:1">+</div>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="gchat-container" id="myCreate">
+            <div class="set-icons">
+                <i class="fa fa-times" aria-hidden="true" style="font-size:13px;float:right;margin-right:2%"></i>
+                <span class="compress">
+                    <i class="fa fa-compress" aria-hidden="true" style="font-size:12px;float:right;margin-right:2%"></i>
+                </span>
+                <i class="fa fa-cog" aria-hidden="true" style="font-size:12px;float:right;margin-right:2%"></i>
+                <i class="fa fa-bell" style="font-size:12px;float:right;margin-right:2%"></i>
+            </div>
+
+            <div class="gchat-top">
+                <div class="gchat-profile"></div><div class="gchat-profile"></div><div class="gchat-profile"></div>
+                <p>GROUP NAME</p>
+                <div class="gchat-icons"><i class="fa fa-phone" aria-hidden="true" style="position:relative; left: 13px; top: 6px;font-size: 18px;"></i></div>
+                <div class="gchat-icons"><i class="fa fa-video-camera" aria-hidden="true" style="position:relative; left: 11px; top: 6px;font-size: 18px;"></i></div>
+            </div>
+
+            <div class="gchat-background">
+                <p>2020-09-18</p>
+                <div class="gchat-chatbox-1">
+                    <p>더 생각해야 하는 부분들</p>
+                </div>
+                <div class="gchat-chatbox-2">
+                    <p>세팅 기능, 축소 버젼, 신고, 그룹채팅</p>
+                </div>
+            </div>
+
+            <div class="gchat-bottom">
+                <div class="gchat-typebox">
+                    <i class="fa fa-smile-o" aria-hidden="true" style="position:absolute; font-size:25px;margin-left: 0.75%; margin-top:0.2%;"></i>
+                    <div class="gchat-type">
+                        <textarea placeholder="Type message..."></textarea>
+                    </div>
+                    <i class="fa fa-paper-plane-o" aria-hidden="true" style="position:absolute; font-size:15px;margin-left: 0.5%; margin-top:0.5%;"></i>
+                </div>
+
+
+                <i class="fa fa-file-image-o" aria-hidden="true" style="margin-left:1%"></i>
+                <i class="fa fa-address-book" aria-hidden="true" style="margin-left:1%;"></i>
+                <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 20px;margin-top: 1%;margin-left: 1%;"></i>
+
+                <i class="fa fa-microphone" aria-hidden="true" style="float: right;margin-right: 2%; margin-top: 2%;"></i>
+            </div>
+        </div>
+
+        <div class="compressed" id="msg-compressed">
+            <div class="compressed-profile"></div>
+            <div class="compressed-profile" style="float:left;margin-left: 6%"></div><div class="compressed-profile" style="float: right; margin-right:6%"></div>
+
+        </div>
+        
+
+        <script>
+            var ogModal = document.getElementById("og-container");
+
+            var createModal = document.getElementById("myCreate");
+            var span_create = document.getElementsByClassName("create")[0];
+            span_create.onclick = function() {
+                createModal.style.display = "block";
+                ogModal.style.display = "none";
+
+            }
+
+            var compModal = document.getElementById("msg-compressed");
+
+            var span_compress = document.getElementsByClassName("compress")[0];
+
+            span_compress.onclick = function() {
+                createModal.style.display = "none";
+                compModal.style.display = "block";
+            }
+
+            var span_expand = document.getElementsByClassName("compressed")[0];
+
+            span_expand.onclick = function() {
+                compModal.style.display = "none";
+                createModal.style.display = "block";
+            }
+
+        </script>
+
+    </body>
+</html>

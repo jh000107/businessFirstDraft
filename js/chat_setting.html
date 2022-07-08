@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Chat Setting</title>
+        <link rel="stylesheet" href="chat_setting.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <div class="set-icons">
+                <i class="fa fa-times" aria-hidden="true" style="font-size:14px;float:right;margin-right:3%"></i>
+                <i class="fa fa-compress" aria-hidden="true" style="font-size:13px;float:right;margin-right:3%"></i>
+                <i class="fa fa-cog" aria-hidden="true" style="font-size:13px;float:right;margin-right:3%"></i>
+                <i class="fa fa-bell" style="font-size:13px;float:right;margin-right:3%"></i>
+            </div>
+
+            <div class="set-main">
+                <p>SETTING</p>
+            </div>
+            <div class="set-color">
+                <p>COLOR</p>
+            </div>
+            <div class="text-style">
+            </div>
+            <div class="backpics"></div><div class="backpics"></div><div class="backpics"></div>
+            <div class="backpics">
+                <p>BACKGROUND<br> 
+                    IMAGE
+                </p>
+            </div>
+            <div class="options">
+                <p>FONT</p>
+                <select name="Day" id="">
+                    <option value="DAY" selected>CHANGE FONT</option>
+                    <option value="1">a</option>
+                    <option value="2">b</option>
+                    <option value="3">c</option>
+                    <option value="4">d</option>
+                    <option value="5">e</option>
+                    <option value="6">f</option>
+                    <option value="7">g</option>
+                </select>
+            </div>
+            <div class="line1"></div>
+
+            <div class="a">
+                <p>NOTIFICATION</p>
+            </div>
+            <div class="toggle">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+
+            <div class="b">
+                <p>MESSAGE <br>
+                    PREVIEW
+                </p>
+            </div>
+
+            <div class="toggle">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+
+            <div class="line2"></div>
+            <button class="alert-msg" id="reportBtn">REPORT SPAM OR ABUSE</button>
+
+            <button class="alert-msg" id="deleteBtn">DELETE THE MESSAGE</button>
+
+        </div>
+
+        <div class="popup-container" id="myReport">
+            <div class="report-content">
+                <h1>Spam Report Successfully Submitted.</h1>
+
+                <div class="pics_bg_1"></div>
+                <div class="circles"></div><div class="circles"></div><div class="circles"></div><div class="circles"></div><div class="circles"></div>
+                <div class="pics_bg_2"></div>
+
+                <p>Our company has received a spam report<br>
+                    for OOO. We are very sorry for inconvenience.<br>
+                </p>
+                <span class="close">&RightArrow;</span>
+            </div>
+
+        </div>
+
+        <div class="popup-container" id="myDelete">
+            <div class="delete-content">
+                <h1>DELETE MESSAGES</h1>
+                <p>This message will be deleted from your and your contact's <br>
+                    conversation. Are you sure you want to delete it?</p>
+                <div class="line"></div>
+                <br>
+                <span class="del_close">CLOSE</span><span class="del_ok">OK</span>
+
+            </div>
+
+        </div>
+
+
+        <script>
+            var report_modal = document.getElementById("myReport");
+
+            var report_btn = document.getElementById("reportBtn");
+
+            var span = document.getElementsByClassName("close")[0];
+
+            report_btn.onclick = function() {
+                report_modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+                report_modal.style.display = "none";
+            }
+
+
+            var delete_modal = document.getElementById("myDelete");
+            var delete_btn = document.getElementById("deleteBtn");
+            var span_close = document.getElementsByClassName("del_close")[0];
+            var span_ok = document.getElementsByClassName("del_ok")[0];
+            
+            delete_btn.onclick = function() {
+                delete_modal.style.display = "block";
+            }
+
+            span_close.onclick = function() {
+                delete_modal.style.display = "none";
+            }
+
+            span_ok.onclick = function() {
+                delete_modal.style.display = "none";
+            }
+
+
+
+        </script>
+    </body>
+</html>
